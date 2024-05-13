@@ -1,5 +1,6 @@
-package dev.eric.MovieGenie;
+package dev.eric.MovieGenie.movie;
 
+import dev.eric.MovieGenie.review.Review;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package dev.eric.MovieGenie;
+package dev.eric.MovieGenie.review;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +12,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Review {
+
     @Id
     private ObjectId id;
     private String body;
+
+    public Review(String body) {
+        this.body = body;
+    }
+
+
+
 }

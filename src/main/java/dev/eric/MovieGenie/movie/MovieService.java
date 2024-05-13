@@ -1,6 +1,7 @@
-package dev.eric.MovieGenie;
+package dev.eric.MovieGenie.movie;
 
-import org.bson.types.ObjectId;
+import dev.eric.MovieGenie.movie.Movie;
+import dev.eric.MovieGenie.movie.MovieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
-    public Optional<Movie> singleMovie(ObjectId id) {
-        return movieRepository.findById(id);
+    public Optional<Movie> singleMovie(String imdbId) {
+        return movieRepository.findByImdbId(imdbId);
     }
 }
