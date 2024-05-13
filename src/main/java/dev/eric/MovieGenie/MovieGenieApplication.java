@@ -13,10 +13,8 @@ public class MovieGenieApplication {
 		SpringApplication.run(MovieGenieApplication.class, args);
 	}
 
-
-
-	@GetMapping("/root")
-	public String apiRoot() {
-		return "Hello, World!";
-	}
+//	@GetMapping("/root")
+//	public String apiRoot() {
+//		return "Hello, World!";
+//	}
 }
